@@ -1,7 +1,11 @@
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import '../style.css';
+import App from './app';
 
-ReactDOM.render(<HelloWorld />, document.querySelector("main"));
-
-function HelloWorld() {
-    return <div>Hello, World!</div>;
-}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
