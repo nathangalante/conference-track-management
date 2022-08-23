@@ -8,7 +8,7 @@ app.use(compression());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    db.getTalks(req.body.name)
+    db.getTalks()
         .then(({ rows }) => {
             console.log("talks rows: ", rows);
             res.json({ rows });
