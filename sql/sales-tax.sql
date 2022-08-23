@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS talks;
+
 CREATE TABLE talks (
     id SERIAL primary key,
     name VARCHAR(255) NOT NULL,
